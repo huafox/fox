@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
- 	
-<h1>我的第一段 JavaScript</h1>
-<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
-<input id="demo" type="text">
 <script>
-function myFunction()
-{
-	var x=document.getElementById("demo").value;
-	if(x==""||isNaN(x))
-	{
-		alert("不是数字");
-	}
-}
+    function myFunction()
+    {
+        document.getElementById("demo").innerHTML="我的第一个"
+    }
 </script>
-<button type="button" onclick="myFunction()">点击这里</button>
-	
+
+</head>
+<h1>我的WEB 页面</h1>
+<p id="demo">一个段落</p>
+<button type="button" onclick="myAlert()">尝试一下</button>
+<script>
+    document.write(Date());
+    function myAlert()
+    {
+        document.getElementById("demo").innerHTML="段落己修改。";
+    }
+</script>
 </body>
 </html>
